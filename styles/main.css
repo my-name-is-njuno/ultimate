@@ -32,6 +32,7 @@
     transform: translateZ(0) scale(1.0,1.0); 
     background: url("../img/doc.jpg");
     background-size: cover; 
+    background-position: center; 
     background-attachment: fixed;
     animation: increase 60s linear 10ms infinite;
     -webkit-transition: all 0.2s ease-in-out;
