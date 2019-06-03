@@ -99,5 +99,16 @@
     margin-right: 1rem;
     margin-left: 1rem;
   }
+
+  .intro-text {
+    width: 90%;
+    /*padding: 10% 10% 0 10%;*/
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .small-h1 {
+    display: none;
+  }
 }
 
