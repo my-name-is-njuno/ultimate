@@ -93,6 +93,10 @@
   background: linear-gradient(45deg, rgba(42, 27, 161, 0.1), rgba(29, 210, 177, 0.1) 100%);
 }
 
+.resize-logo {
+    width: 50px;
+  }
+
 
 @media (max-width: 450px) {
   .margins {
@@ -117,5 +121,11 @@
   .seek-action {
     color: #ddd;
   }
+
+  .resize-logo {
+    width: 60px;
+  }
+
+  
 }
 
