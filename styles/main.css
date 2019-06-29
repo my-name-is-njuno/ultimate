@@ -1,12 +1,15 @@
+html {
+  scroll-behavior: smooth;
+}
 #intro {
-  
+
   position: relative;
   height: 100vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
   color: aqua;
-  
+
 }
 #intro:after {
     content: '';
@@ -27,16 +30,16 @@
     position: absolute;
     top: 0;
     left: 0;
-    -webkit-backface-visibility:hidden; 
-    -moz-backface-visibility:hidden; 
-    backface-visibility:hidden; 
-    -webkit-transform: translateZ(0) scale(1.0,1.0); 
-    -moz-transform: translateZ(0) scale(1.0,1.0); 
-    -o-transform: translateZ(0) scale(1.0,1.0); 
-    transform: translateZ(0) scale(1.0,1.0); 
-    background: url("../img/doc.jpg");
-    background-size: cover; 
-    background-position: center; 
+    -webkit-backface-visibility:hidden;
+    -moz-backface-visibility:hidden;
+    backface-visibility:hidden;
+    -webkit-transform: translateZ(0) scale(1.0,1.0);
+    -moz-transform: translateZ(0) scale(1.0,1.0);
+    -o-transform: translateZ(0) scale(1.0,1.0);
+    transform: translateZ(0) scale(1.0,1.0);
+    background: url("../img/bc.jpg");
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     animation: increase 60s linear 10ms infinite;
     -webkit-transition: all 0.2s ease-in-out;
@@ -55,112 +58,39 @@
 @keyframes increase {
   0% {
     transform: scale(1);
-    
+    background-image: url('../img/bc.jpg');
+
   }
-  50% {
-    transform: scale(1.5);
-    
+  100% {
+    transform: scale(2);
+    background-image: url('../img/doc.jpg');
   }
 }
 .intro-text h1 {
-  text-transform: uppercase; 
-  font-size: 40px;
-  background: rgba(1,1,1,0.6);
-  padding: 15px;
-}
+  text-transform: uppercase;
+  font-size: 4em;
+  font-weight: 800;
+  color: aqua;
+  letter-spacing: 0.1em;
 
+}
 .intro-text h1 span {
- 
-  margin: 0;
-  padding: 0;
-  animation:  animate 2s linear infinite;
-
+  display: inline-block;
+  animation: typing 6s linear;
 }
-
-.intro-text h1 span:nth-child(1) {
-  animation-delay:0s;
-}
-.intro-text h1 span:nth-child(2) {
-  animation-delay:0.25s;
-}
-.intro-text h1 span:nth-child(3) {
-  animation-delay:0.5s;
-}
-.intro-text h1 span:nth-child(4) {
-  animation-delay:0.75s;
-}
-.intro-text h1 span:nth-child(5) {
-  animation-delay:1s;
-}
-.intro-text h1 span:nth-child(6) {
-  animation-delay:1.25s;
-}
-.intro-text h1 span:nth-child(7) {
-  animation-delay:1.5s;
-}
-
-.intro-text h1 span:nth-child(8) {
-  animation-delay:1.75s;
-}
-.intro-text h1 span:nth-child(9) {
-  animation-delay:2s;
-}
-.intro-text h1 span:nth-child(10) {
-  animation-delay:2.25s;
-}
-.intro-text h1 span:nth-child(11) {
-  animation-delay:2.5s;
-}
-.intro-text h1 span:nth-child(12) {
-  animation-delay:2.75s;
-}
-.intro-text h1 span:nth-child(13) {
-  animation-delay:3s;
-}
-.intro-text h1 span:nth-child(14) {
-  animation-delay:3.25s;
-}
-
-
-.intro-text h1 span:nth-child(15) {
-  animation-delay:3.5s;
-}
-.intro-text h1 span:nth-child(16) {
-  animation-delay:3.75s;
-}
-.intro-text h1 span:nth-child(17) {
-  animation-delay:4s;
-}
-.intro-text h1 span:nth-child(18) {
-  animation-delay:4.25s;
-}
-.intro-text h1 span:nth-child(19) {
-  animation-delay:4.5s;
-}
-
-
-@keyframes animate {
-  0%, 100% 
-  {
-    color: cyan;
-    filter: blur(2px);
-    text-shadow: 0 0 10px #00b3ff,
-                0 0 20px #00b3ff,
-                0 0 40px #00b3ff,
-                0 0 80px #00b3ff,
-                0 0 120px #00b3ff,
-                0 0 200px #00b3ff,
-                0 0 300px #00b3ff,
-                0 0 400px #00b3ff,
+@keyframes typing {
+  0% {
+    opacity:  0;
+    transform: rotate(45deg);
+    filter: blur(10px);
   }
-
-  5% , 95%
-  {
-    color: red;
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
     filter: blur(0px);
-    text-shadow: 0 0 10px #fff;
   }
 }
+
 
 
 
@@ -169,8 +99,7 @@
 .small-h1 {
   font-size: 25px;
   color: #fff;
-  font-style: italic;
-  font-weight: 200;
+  font-weight: bolder;
 }
 
 .top-nav-collapse {
@@ -212,7 +141,7 @@
     margin: 0 auto;
   }
 
-  
+
 
   .sm-not-visible {
     display: none;
@@ -227,6 +156,5 @@
     width: 60px;
   }
 
-  
-}
 
+}
