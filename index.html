@@ -373,7 +373,7 @@
             <div class="card-body p-5">
               <div class="row">
                 <div class="col-md-8">
-                  <form action="" method="POST">
+                  <form action="" method="POST" id="appt">
 
                     <div class="row">
                       <div class="col-md-6">
@@ -384,7 +384,7 @@
                       </div>
                       <div class="col-md-6">
                         <div class="md-form">
-                          <input class="form-control" id="email" type="text" name="_replyto" required="required" />
+                          <input class="form-control" id="email" type="email" name="email" required="required" />
                           <label for="email">Your email</label>
                         </div>
                       </div>
@@ -393,15 +393,14 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="md-form">
-                          <input class="form-control" id="mobile" type="text" name="mobile" required="required" />
-                          <label for="name">Your mobile</label>
+                          <input class="form-control" id="phone" type="text" name="phone" required="required" />
+                          <label for="email">Phone</label>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="md-form">
-                          <input class="form-control" id="dt" type="text" name="dt" required="required" />
-                          <label for="email">Proposed Date and Time</label>
-                        </div>
+                          <input class="form-control" id="proposed_date" type="text" name="proposed_date" required="required" />
+                          <label for="name">Proposed Date</label>                        </div>
                       </div>
                     </div>
 
@@ -421,7 +420,7 @@
                       </div>
                     </div>
                     <div class="center-on-small-only mb-4">
-                      <button class="btn btn-indigo ml-0" type="submit"><i class="fa fa-paper-plane-o mr-2"></i>
+                      <button class="btn btn-indigo ml-0" type="submit" id="bappt"><i class="fa fa-paper-plane-o mr-2"></i>
                         Book</button>
                     </div>
                   </form>
