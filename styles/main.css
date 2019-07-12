@@ -19,7 +19,7 @@ html {
     bottom: 0;
 }
 
-#partner {
+#partner, #gallery {
   background: #eee;
 }
 
@@ -41,7 +41,7 @@ html {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    animation: increase 60s linear 10ms infinite;
+    animation: increase 60s ease-in-out 10ms infinite;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
