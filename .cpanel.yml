@@ -3,4 +3,8 @@ deployment:
  tasks:
  - export DEPLOYPATH=/home/ma8s5gnm2tak/public_html/
  - /bin/cp * $DEPLOYPATH
- 
+ - /bin/cp css $DEPLOYPATH
+ - /bin/cp font $DEPLOYPATH
+ - /bin/cp img $DEPLOYPATH
+ - /bin/cp js $DEPLOYPATH
+ - /bin/cp scripts $DEPLOYPATH
